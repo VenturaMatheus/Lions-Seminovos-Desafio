@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agende sua visita na Lions Seminovos e conheça nossos veículos.">
+    <title>Agende sua Visita | Lions Seminovos</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/visita.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon/favicon_lions.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/img/lions_logo.jpg" alt="Lions Seminovos" class="logo">
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <a href="catalogo.html">Catálogo</a>
+                <a href="visita.html">Agende sua Visita</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="agendamento">
+            <div class="container">
+                <div class="visita-grid">
+
+                    <!-- TEXTO INSTITUCIONAL -->
+                    <div class="visita-texto">
+                        <h1>Atendimento pensado para você!!</h1>
+
+                        <p>
+                            Na Lions Seminovos, cada visita representa o início de uma experiência
+                            baseada em confiança, transparência e atenção aos detalhes.
+                        </p>
+
+                        <p>
+                            Nosso compromisso vai além da venda. Estamos preparados para ouvir,
+                            orientar e acompanhar você em todas as etapas, da escolha do veículo
+                            ideal ao pós-venda.
+                        </p>
+
+                        <p>
+                            Agende sua visita no melhor dia e horário. Nossa equipe está pronta
+                            para receber você com um atendimento humano, claro e responsável.
+                        </p>
+                    </div>
+
+                    <!-- FORMULÁRIO -->
+                    <div class="form-wrapper">
+                        <h2>Agende sua visita</h2>
+
+                        <form class="form-agendamento" id="form-visita">
+
+                            <fieldset class="form-section">
+                                <legend>Dados pessoais</legend>
+
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="nome">Nome completo</label>
+                                        <input type="text" id="nome" name="nome" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="telefone">Telefone</label>
+                                        <input type="tel" id="telefone" name="telefone" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="form-section">
+                                <legend>Detalhes da visita</legend>
+
+                                <div class="form-group">
+                                    <label for="loja">Loja</label>
+                                    <select id="loja" name="loja" required>
+                                        <option value="">Selecione a loja</option>
+                                        <option>Lions Seminovos Nova Iguaçu</option>
+                                        <option>Lions Seminovos Duque de Caxias</option>
+                                        <option>Lions Seminovos Intendente Magalhães</option>
+                                        <option>Lions Seminovos Niterói</option>
+                                        <option>Lions Seminovos Barra Mansa</option>
+                                        <option>Lions Seminovos Campo Grande</option>
+                                        <option>Lions Seminovos Vila Prudente</option>
+                                        <option>Lions Seminovos Osasco</option>
+                                        <option>Lions Seminovos Santo Amaro</option>
+                                        <option>Lions Seminovos São Bernardo do Campo</option>
+                                        <option>Lions Seminovos São Miguel</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="data">Data</label>
+                                        <input type="date" id="data" name="data" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="horario">Horário</label>
+                                        <input type="time" id="horario" name="horario" required>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <button type="submit" class="btn btn-submit">
+                                Agendar visita →
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botão Externo -->
+    <section class="btn-externo">
+        <div class="container">
+            <a href="https://wa.me/558004540505?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20veículos%20disponíveis.%20Podemos%20conversar?"
+                target="_blank" rel="noopener noreferrer" class="btn btn-outline">Atendimento via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Lions Seminovos - Projeto demonstrativo</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

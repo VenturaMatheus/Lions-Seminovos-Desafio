@@ -1,0 +1,133 @@
+/* ==============================
+   CATÁLOGO - HEADER
+============================== */
+
+
+.catalogo-header {
+    margin-top: 80px;
+    background-color: var(--Preto);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.catalogo-header h1 {
+    color: var(--branco);
+}
+
+.catalogo-header p {
+    color: var(--branco);
+}
+
+/* ==============================
+   CATÁLOGO - GRID
+============================== */
+.catalogo {
+    background-color: var(--Preto);
+    padding: 3rem 0;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.catalogo-grid .card {
+    background-color: var(--branco);
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.catalogo-grid .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* ==============================
+   CARD
+============================== */
+.catalogo .card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogo .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.catalogo .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* ==============================
+   CARD - TEXTO
+============================== */
+.catalogo .card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Preto);
+    margin: 1rem;
+    line-height: 1.3;
+}
+
+.catalogo .card .info {
+    font-size: 0.9rem;
+    color: var(--Preto);
+    margin: 0 1rem 0.5rem;
+}
+
+.catalogo .card .preco {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--Preto);
+    margin: 0 1rem 1rem;
+}
+
+/* ==============================
+   BOTÃO
+============================== */
+.catalogo .card .btn {
+    margin: auto 1rem 1.2rem;
+    padding: 0.75rem;
+    background-color: var(--Preto);
+    color: var(--Vermelho);
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.catalogo .card .btn:hover {
+    background-color: var(--Vermelho);
+    color: var(--branco);
+}
+
+/* ==============================
+   RESPONSIVO
+============================== */
+@media (max-width: 768px) {
+    .catalogo-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .catalogo-header p {
+        font-size: 1rem;
+    }
+
+    .catalogo {
+        padding: 2rem 0;
+    }
+}

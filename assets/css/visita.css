@@ -1,0 +1,118 @@
+/* SEÇÃO PRINCIPAL */
+.agendamento {
+  background-color: var(--Preto);
+  padding: 140px 0 80px;
+}
+
+/* GRID */
+.visita-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* TEXTO INSTITUCIONAL */
+.visita-texto h1 {
+  color: var(--branco);
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.visita-texto p {
+  color: var(--cinza-claro);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* FORMULÁRIO */
+.form-wrapper {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.form-wrapper h2 {
+  color: var(--branco);
+  margin-bottom: 24px;
+}
+
+/* FIELDSETS */
+.form-section {
+  border: none;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.form-section legend {
+  color: var(--Vermelho);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* INPUTS */
+.form-group-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+label {
+  color: var(--cinza-claro);
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+input,
+select {
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #222;
+  color: var(--branco);
+  font-family: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid var(--Vermelho);
+}
+
+/* BOTÃO */
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--Vermelho);
+  color: var(--branco);
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .visita-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agendamento {
+    padding-top: 120px;
+  }
+
+  .visita-texto h1 {
+    font-size: 2rem;
+  }
+}
