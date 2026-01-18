@@ -2,109 +2,107 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Lions Seminovos: carros seminovos com procedência, condições especiais e atendimento ágil pelo WhatsApp.">
-    <title>Lions Seminovos | Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Lions Seminovos: carros seminovos com procedência, condições especiais e atendimento ágil pelo WhatsApp.">
+  <title>Lions Seminovos | Home</title>
 
-    <!-- Css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon/favicon_lions.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon/favicon_lions.png" type="image/png">
 </head>
 
 <body>
-    <!--Header-->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo-link">
-                <img src="assets/img/lions_logo.jpg" alt="Lions Seminovos" class="logo">
-            </a>
 
-            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-                <span class="hamburger"></span>
-            </button>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/img/lions_logo.jpg" alt="Lions Seminovos" class="logo">
+      </a>
 
-            <nav class="nav" id="nav-menu">
-                <a href="catalogo.html">Catálogo</a>
-                <a href="visita.html">Agende sua Visita</a>
-            </nav>
-        </div>
-    </header>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Seu próximo carro está aqui</h1>
-                <p>Seminovos com procedência e as melhores condições do mercado.</p>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="visita.html">Agende sua Visita</a>
+      </nav>
+    </div>
+  </header>
 
-                <a href="catalogo.html" class="btn btn-hero">Ver Catálogo</a>
-            </div>
-        </section>
+  <main id="conteudo-principal">
 
-        <!-- Destaques -->
-        <section class="destaques">
-            <div class="container">
-                <h2>Veículos em destaque</h2>
-
-                <div class="cards">
-                    <article class="card">
-                        <figure>
-                            <img src="assets/img/VOLKSWAGEN_AMAROK.webp" alt="VOLKSWAGEN VW AMAROK CS 4X4 S" width="400"
-                                height="260" loading="lazy">
-                        </figure>
-                        <h3>VOLKSWAGEN VW AMAROK CS 4X4 S | 90482 Km | 2018/2019 | Diesel</h3>
-                        <p>R$ 85.000,00</p>
-                    </article>
-
-                    <article class="card">
-                        <figure>
-                            <img src="assets/img/NISSAN_KICKS.webp" alt="NISSAN KICKS ACTIVE CVT" width="400"
-                                height="260" loading="lazy">
-                        </figure>
-                        <h3>NISSAN KICKS ACTIVE CVT | 37065 Km | 2023/2024 | Flex</h3>
-                        <p>R$ 102.900,00</p>
-                    </article>
-
-                    <article class="card">
-                        <figure>
-                            <img src="assets/img/JEEP_COMMANDER.webp" alt="JEEP COMMANDER" width="400" height="260"
-                                loading="lazy">
-                        </figure>
-                        <h3>JEEP COMMANDER LIM T270 | 14480 Km | 2023/2023 | Flex</h3>
-                        <p>R$ 147.990,00</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Botão Externo -->
-    <section class="btn-externo">
-        <div class="container">
-            <a href="https://wa.me/558004540505?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20veículos%20disponíveis.%20Podemos%20conversar?"
-                target="_blank" rel="noopener noreferrer" class="btn btn-outline">Atendimento via WhatsApp
-            </a>
-        </div>
+    <!-- Hero -->
+    <section class="hero" role="banner">
+      <div class="hero-content">
+        <h1>Seu próximo carro está aqui</h1>
+        <p>Seminovos com procedência e as melhores condições do mercado.</p>
+        <a href="catalogo.html" class="btn btn-hero">Ver Catálogo</a>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Lions Seminovos - Projeto demonstrativo</p>
-        </div>
-    </footer>
+    <!-- Destaques -->
+    <section class="destaques" aria-labelledby="titulo-destaques">
+      <div class="container">
+        <h2 id="titulo-destaques">Veículos em destaque</h2>
 
-    <!-- JavaScript -->
-    <script src="assets/js/script.js"></script>
+        <div class="cards">
+
+          <article class="card">
+            <figure>
+              <img src="assets/img/VOLKSWAGEN_AMAROK.webp"
+                alt="Volkswagen Amarok CS 4x4 2018/2019"
+                loading="lazy">
+            </figure>
+            <h3>Volkswagen Amarok CS 4x4</h3>
+            <p>R$ 85.000,00</p>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="assets/img/NISSAN_KICKS.webp"
+                alt="Nissan Kicks Active CVT 2023/2024"
+                loading="lazy">
+            </figure>
+            <h3>Nissan Kicks Active CVT</h3>
+            <p>R$ 102.900,00</p>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="assets/img/JEEP_COMMANDER.webp"
+                alt="Jeep Commander T270 2023"
+                loading="lazy">
+            </figure>
+            <h3>Jeep Commander T270</h3>
+            <p>R$ 147.990,00</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="btn-externo" aria-label="Contato via WhatsApp">
+    <div class="container">
+      <a href="https://wa.me/558004540505"
+        target="_blank" rel="noopener noreferrer"
+        class="btn btn-outline">
+        Atendimento via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Lions Seminovos - Projeto demonstrativo</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
