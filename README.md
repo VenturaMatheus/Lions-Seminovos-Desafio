@@ -101,10 +101,31 @@ cd projeto-lions-seminovos
 
 ## 🧠 Decisões e considerações
 
-* Optei por **separar os estilos globais dos estilos específicos de cada página**, facilitando manutenção e leitura do código
-* Mantive o JavaScript simples, focado apenas na interação essencial
-* Evitei adicionar funcionalidades além do escopo do desafio para manter clareza e objetividade
-* Busquei um visual limpo, profissional e alinhado ao segmento automotivo
+* Separei **estilos globais** (`style.css`) dos **estilos por página** (`catalogo.css`, `visita.css`) para facilitar manutenção
+* Mantive o JavaScript **vanilla e acessível** (aria-label, aria-expanded, fechamento com ESC/click fora)
+* O header é **fixo com leve opacidade e blur** para legibilidade
+* A seção hero usa `background-position: 65% center` para favorecer a leitura do preço na imagem
+* Abordagem **mobile-first** com breakpoints em 768px, 1024px e 1920px
+* Evitei funcionalidades fora do escopo e priorizei **clareza e objetividade**
+* Visual limpo, profissional e coerente com o segmento automotivo
+
+---
+
+## ✅ Checklist do desafio
+
+- Aplicação inspirada no site da Lions Seminovos 
+- Três páginas principais: Home, Catálogo e Agendamento
+- Elementos gráficos públicos e favicon
+- Botão externo para WhatsApp em todas as páginas
+- Layout responsivo e acessível (HTML semântico + ARIA)
+- README com decisões técnicas e instruções de execução
+
+---
+
+## 🔗 Referências
+
+- Site oficial (referência visual): https://lionsseminovos.com.br/
+
 ---
 
 ## 👤 Autor
